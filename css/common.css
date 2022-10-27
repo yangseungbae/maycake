@@ -1,0 +1,42 @@
+/* 모든 요소의 여백제거하기 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* list 장식제거 */
+li{
+    list-style: none;
+}
+/* a 밑줄제거, 글자색 지정 */
+a{
+ text-decoration: none;
+ color: #333;
+}
+/* img의 정렬 */
+img{
+    vertical-align: top;
+}
+/* 기울기를 바로 */
+address,i,em{
+    font-style: normal;
+}
+/* 화면에서 가려주기 */
+.blind{
+    position: absolute;
+    top:-99999px
+}
+/* body 글씨체, 글자크기, 자간, 줄간격, 기본색상 */
+body{
+    font-family: "나무",dotum,sans-serif;
+    font-size: 15px;
+    /* line-height: 1em; */
+    color:#333
+}
+/* float된 부모 찾기 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* skip menu */
