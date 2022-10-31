@@ -98,6 +98,7 @@ h1 img {
 
 /* mainbanner */
 .mainbanner {
+    position: relative;
     width: 100%;
 }
 
@@ -123,7 +124,7 @@ h1 img {
 }
 .arrowbtn>a{
     position: absolute;
-    top: 31%;
+    top: 45%;
     left:50%;
     transform: translateX(-50%);
 
@@ -137,7 +138,7 @@ h1 img {
 /* 페이지 */
 .pager{
     position: absolute;
-    bottom: 40%;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -167,18 +168,16 @@ h1 img {
 
 .cakelist {
     position: relative;
-    margin: 120px 0 100px 0;
+    margin: 40px 0 150px 0;
     font-family: 'LeferiPoint-WhiteObliqueA';
 }
 
 .cakelist h2 {
-    top: -50px;
-    width: 100%;
-    padding-bottom: 5px;
-    position: absolute;
-    border-bottom: 1px solid #ddd;
-    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
     font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'LeferiPoint-WhiteObliqueA';
 }
 
 
@@ -226,8 +225,9 @@ h1 img {
     position: relative;
 }
 
-.mid>.make>h2 {
+.mid>h2 {
     text-align: center;
+    margin-bottom: 30px;
     font-size: 1.4em;
     font-weight: bold;
     font-family: 'LeferiPoint-WhiteObliqueA';
@@ -252,12 +252,14 @@ h1 img {
 .mid>.make li:hover img {
     transform: scale(1.05, 1.05);
 }
-
+.swiper-container{
+    margin-bottom: 100px;
+}
 
 
 
 .group {
-    margin-top: 150px;
+    margin: 150px 0;
     display: flex;
     gap: 30px;
 }
@@ -320,7 +322,7 @@ h1 img {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 150px auto 10px;
+    margin: 250px auto 10px;
     border: 1px solid #ccc;
     font-family: 'LeferiPoint-WhiteObliqueA';
 }
@@ -500,10 +502,7 @@ footer img {
     }
     /* ----------------------------------mainbanner---------------------------------- */
     .pager{
-        bottom: 550px;
-    }
-    .arrowbtn>a{
-        top: 27%;
+        bottom: 3%;
     }
     .arrowbtn img{
         width: 50px;
@@ -570,11 +569,11 @@ footer img {
 @media screen and (max-width:852px) {
         /* mainbanner */
 /*--------------------------------- arrow----------------------------- */
-    .arrowbtn>a{
-        top: 24%;
-    }
+.arrowbtn>a{
+    top: 43%;
+}
     .pager{
-        bottom: 490px;
+        bottom: 3%;
     }
     .pager>li>a{
         width: 12px;
@@ -600,7 +599,7 @@ footer img {
 @media screen and (max-width:767px) {
             /* mainbanner */
     .pager{
-        bottom: 460px;
+        bottom: 3%;
     }
     body {
         width: 99%;
@@ -711,8 +710,8 @@ footer img {
 
 
     .group {
+        margin: 150px 0 0 5px;
         width: 300%;
-        margin-left: 5px;
     }
 
     .group .hover {
@@ -733,10 +732,7 @@ footer img {
             /* mainbanner */
 
     .pager{
-        bottom: 880px;
-    }
-    .arrowbtn>a {
-        top: 15.5%;
+        bottom: 3%;
     }
     .arrowbtn img{
         width: 30px;
@@ -747,6 +743,12 @@ footer img {
     .buy>span{
         padding: 10px 25px;
         font-size: 1.05em;
+    }
+    .cakelist {
+        margin: 40px 0 100px 0;
+    }
+    .cakelist h2 {
+        margin-bottom: 20px;
     }
     .cakelist .scrollwrap>ul{
         width: 100%;
@@ -760,6 +762,9 @@ footer img {
     }
     .cakelist .scrollwrap li:last-child{
         display: none;
+    }
+    .swiper-container {
+        margin-bottom: 50px;
     }
     .mid>.make {
         width: 400%;
@@ -811,7 +816,7 @@ footer img {
 
 @media screen and (max-width:480px) {
     .pager{
-        bottom: 780px;
+        bottom: 3%;
     }
     .pager>li>a{
         width: 10px;
@@ -825,6 +830,9 @@ footer img {
         padding: 10px;
         font-size: 1em;
     }
+    .cakelist {
+        margin: 40px 0 50px 0;
+    }
     .cakelist .scrollwrap a>img{
         margin-bottom: 20px;
     }
@@ -835,15 +843,30 @@ footer img {
     .cakelist .scrollwrap a>span:nth-child(4){
         display: none;
     }
+    .group {
+        margin: 70px 0 0 5px;
+    }
+    .group h2 {
+        top: 10px;
+    }
     .noticewrap{
         padding-bottom: 0;
         height: 120px;
+        margin: 50px auto;
+        gap: 0;
     }
     .top {
         flex-wrap: wrap;
         width: 100%;
     }
+    .infor li:last-child {
+        display: none;
+    }
+    .infor li:first-child {
+        display: none;
+    }
     .top>ul:first-child{
         font-size: 0.85em;
     }
+    
 }

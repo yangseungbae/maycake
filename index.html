@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="js/bannerslide.js"></script>
 </head>
 
@@ -128,23 +130,21 @@
         </div>
     </header>
     <div class="mid">
-        <div class="make">
-            <h2>주문제작</h2>
-            <ul>
-                <li><a href="#"><img src="images/make1.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make2.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make3.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make4.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make5.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make6.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make7.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make8.jpg" alt=""></a></li>
-                <li><a href="#"><img src="images/make9.jpg" alt=""></a></li>
-            </ul>
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <h2>주문제작</h2>
+        <div class="swiper-container">
+            <div class="make mySwiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><a href="#"><img src="images/make1.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make2.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make3.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make4.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make5.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make6.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make7.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make8.jpg" alt=""></a></li>
+                    <li class="swiper-slide"><a href="#"><img src="images/make9.jpg" alt=""></a></li>
+                </ul>
+            </div>
         </div>
         <div class="innerbox">
             <section>
@@ -216,7 +216,7 @@
     <footer>
         <div class="innerbox">
             <div class="top">
-                <ul>
+                <ul class="infor">
                     <li><a href="#">회사소개</a></li>
                     <li><a href="#">이용약관</a></li>
                     <li><a href="#">개인정보처리방침</a></li>
@@ -251,6 +251,38 @@
             </div>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            slidesPerView: 7,
+            loop: true,
+            // loopAdditionalSlides: 1,
+            centeredSlides: true,
+            breakpoints: {
+                360: {
+                    slidesPerView: 1.5,  //브라우저가 768보다 클 때
+                    spaceBetween: 20,
+                },
+                580: {
+                    slidesPerView: 2,  //브라우저가 1024보다 클 때
+                    spaceBetween: 20,
+                },
+                767: {
+                    slidesPerView: 3.5,  //브라우저가 1024보다 클 때
+                    spaceBetween: 20,
+                },
+                1172: {
+                    slidesPerView: 6,  //브라우저가 1024보다 클 때
+                    spaceBetween: 20,
+                }
+            }
+        })
+
+    </script>
 </body>
 
 </html>
