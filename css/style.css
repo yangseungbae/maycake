@@ -502,6 +502,12 @@ footer img {
     .pager{
         bottom: 550px;
     }
+    .arrowbtn>a{
+        top: 27%;
+    }
+    .arrowbtn img{
+        width: 50px;
+    }
 
     /* ----------------------------------cakelist---------------------------------- */
     .buy>span{
@@ -564,11 +570,8 @@ footer img {
 @media screen and (max-width:852px) {
         /* mainbanner */
 /*--------------------------------- arrow----------------------------- */
-    .arrowbtn{
-        display: none;
-    }
     .arrowbtn>a{
-        top: 27%;
+        top: 24%;
     }
     .pager{
         bottom: 490px;
@@ -611,9 +614,6 @@ footer img {
     }
     .mid>.make>h2 {
         padding-left: 200px;
-    }
-    .arrowbtn{
-        display: none;
     }
     /* ------------------------hambtn----------------------- */
 .menuwrap{
@@ -700,6 +700,9 @@ footer img {
         top: 15px;
         right: 10px;
     }
+    .arrowbtn img{
+        width: 40px;
+    }
 
     .buy>span{
         font-size: 1em;
@@ -731,6 +734,12 @@ footer img {
 
     .pager{
         bottom: 880px;
+    }
+    .arrowbtn>a {
+        top: 15.5%;
+    }
+    .arrowbtn img{
+        width: 30px;
     }
     h1 {
         width: 150px;
